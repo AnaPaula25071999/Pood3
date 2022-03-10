@@ -1,0 +1,31 @@
+package exerciciosLogica;
+
+import java.util.Scanner;
+
+public class Exercicio11 {
+
+	public void run() {
+		/* 11. Escreva um programa que leia dois números inteiros A e B quaisquer indicando se A é múltiplo de B ou se B é múltiplo
+		de A.*/
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Digite um valor para A: ");
+		int a = input.nextInt();
+		System.out.print("Digite um valor para B: ");
+		int b = input.nextInt();
+
+		
+		if ( (a%b) == 0) { 
+			System.out.print("O número "+ a + "(A) é multiplo de  " + b + "(B). ");
+		} else {
+			if ( (b%a) == 0) { 
+				System.out.print("O número "+ b + "(B) é multiplo de  " + a + "(A). ");
+			} else {
+				System.out.print("O número "+ a + "(A) e " + b + "(B) não são multiplos. ");
+			}	
+		}
+		
+			
+	}
+
+}
